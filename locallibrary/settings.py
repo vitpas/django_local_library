@@ -148,3 +148,10 @@ STATIC_URL = '/static/'
 # Simplified static file serving.
 # https://pypi.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+## For example, for a site URL is at 'web-production-3640.up.railway.app'
+## (replace the string below with your own site URL):
+CSRF_TRUSTED_ORIGINS = ['web-production-704b.up.railway.app']
+
+# During development/for this tutorial you can instead set just the base URL
+# CSRF_TRUSTED_ORIGINS = ['https://*.railway.app']
